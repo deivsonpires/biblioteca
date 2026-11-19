@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.bibliotecaigor.biblioteca_igor;
 
-/**
- *
- * @author leonardo
- */
 public class Revista extends ItemAcervo {
     private String issn;
     private int volume;
@@ -26,10 +18,6 @@ public class Revista extends ItemAcervo {
         return volume;
     }
 
-    /**
-     * aqui ele pede uma return tag sendo que já tem uma com false, não faço a 
-     * minima ideia o por que, e tenho raiva de quem sabe
-     */
     @Override
     public boolean emprestarItem() {
         System.out.println("revistas não podem ser emprestadas. apenas consulta local.");

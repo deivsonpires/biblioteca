@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.bibliotecaigor.biblioteca_igor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author leonardo
- */
 public abstract class Leitor extends Pessoa {
     private String codigoLeitor;
     private List<Emprestimo> emprestimosAtivos;

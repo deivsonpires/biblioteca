@@ -1,16 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.bibliotecaigor.biblioteca_igor;
 
-
-
-/**
- *
- * @author leonardo :o
- * 
- */
 public class SistemaBiblioteca {
 
     public static void main(String[] args) {
@@ -39,28 +28,20 @@ public class SistemaBiblioteca {
         biblioteca.listarAcervo();
         biblioteca.listarLeitores();
 
-        // aqui estou simulando as tentativas de emprestimo
-        
-        // essa daqui é provavel que funcione por conta do limite de dias
         biblioteca.realizarEmprestimo("L001", "C001");
 
         biblioteca.realizarEmprestimo("L002", "C003");
 
         biblioteca.realizarEmprestimo("L001", "C002");
 
-        // essa daqui é feita para falhar
         biblioteca.realizarEmprestimo("L001", "C002");
         
         biblioteca.realizarEmprestimo("L001", "C004");
         
-        // depois disso vou listar e simular as devoluções
         biblioteca.listarEmprestimosAtivos();
         
-        // por conta do jeito que meu sistema funciona estou assumindo que a
-        // devolução é legitima
         biblioteca.realizarDevolucao("C001");
 
-        // aqui eu simulei um atraso para testar a multa
         biblioteca.realizarDevolucao("C003");
 
         biblioteca.listarAcervo();
